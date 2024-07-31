@@ -34,7 +34,7 @@ const fetchdata = async (url='https://restcountries.com/v3.1/all') => {
   data.forEach((county) => {
     container.innerHTML += `
       <div class="contry flex max-h-60 flex-col md:gap-2 gap-1 shadow-md hover:scale-105 transition-all duration-200 dark:bg-[#2B3743] bg-white rounded-md">
-            <img class="w-full h-2/5 rounded-t-md" src="${county.flags.png}" alt="">
+            <img class="w-full h-3/5 object-fit rounded-t-md" src="${county.flags.png}" alt="">
             <div class="basis-auto p-4 overflow-hidden">
               <h4 class='dark:text-white text-[#2B3743]'>${county.name.common}</h4>
               <p class="dark:text-gray-400 text-[#2B3743]">Population: ${county.population}</p>
